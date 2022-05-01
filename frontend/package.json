@@ -1,0 +1,46 @@
+{
+  "name": "solidabis-koodihaaste-2022",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test:watch": "jest --watch --runInBand",
+    "test:coverage": "jest --coverage",
+    "lint": "next lint"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.js"
+    ],
+    "testEnvironment": "jsdom"
+  },
+  "dependencies": {
+    "@emotion/react": "11.9.0",
+    "@emotion/styled": "11.8.1",
+    "@mui/material": "5.6.3",
+    "next": "12.1.5",
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.16.4",
+    "@testing-library/react": "13.1.1",
+    "@types/jest": "27.4.1",
+    "@types/node": "17.0.30",
+    "@types/react": "18.0.8",
+    "@types/react-dom": "18.0.3",
+    "@types/react-test-renderer": "18.0.0",
+    "@types/styled-components": "5.1.25",
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.5",
+    "jest-fetch-mock": "3.0.3",
+    "jest-styled-components": "7.0.8",
+    "next-router-mock": "0.6.7",
+    "react-test-renderer": "18.1.0",
+    "styled-components": "5.3.5",
+    "typescript": "4.6.4",
+    "typescript-eslint": "0.0.1-alpha.0"
+  }
+}

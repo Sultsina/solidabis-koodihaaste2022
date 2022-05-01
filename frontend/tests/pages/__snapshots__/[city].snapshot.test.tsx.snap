@@ -1,0 +1,359 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with no votes 1`] = `
+.c0 {
+  margin-top: 3em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 2em;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 100%;
+}
+
+.c2 {
+  text-transform: capitalize;
+}
+
+.c3 {
+  font-size: 0.8em;
+  margin-left: 2.5em;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.c4 {
+  margin-bottom: 1.5em;
+}
+
+.c5 {
+  display: grid;
+  justify-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    grid-row-end: span 2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <section
+    className="c1"
+  >
+    <h1
+      className=""
+    >
+      Restaurants for 
+      <span
+        className="c2"
+      />
+    </h1>
+    <FormControl
+      disabled={false}
+    >
+      <FormLabel
+        id="restaurants"
+      >
+        My vote goes for...
+      </FormLabel>
+      <RadioGroup
+        aria-labelledby="demo-radio-buttons-group-label"
+        name="radio-buttons-group"
+        onChange={[Function]}
+        value=""
+      >
+        <div>
+          <FormControlLabel
+            control={<Radio />}
+            data-testid="123"
+            label="McDonalds"
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            value="123"
+          />
+          <div
+            className="c3"
+          />
+        </div>
+      </RadioGroup>
+      <div
+        className="c4"
+      />
+      <button
+        data-testid="submit-vote"
+        disabled={true}
+        onClick={[Function]}
+        variant="contained"
+      >
+        Select
+      </button>
+      <div
+        className="c4"
+      />
+      <button
+        data-testid="remove-vote"
+        disabled={true}
+        onClick={[Function]}
+        variant="contained"
+      >
+        Remove my vote
+      </button>
+    </FormControl>
+    <div
+      className="c4"
+    />
+  </section>
+  <div
+    className="c5"
+  >
+    <h2>
+      Results
+    </h2>
+    <div
+      className=""
+    >
+      No votes yet
+    </div>
+    <div
+      className="c4"
+    />
+    <h2>
+      Yesterdays votes
+    </h2>
+    <div
+      className=""
+    >
+      No votes yesterday
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders correctly with yesteredays votes 1`] = `
+.c0 {
+  margin-top: 3em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 2em;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 100%;
+}
+
+.c2 {
+  text-transform: capitalize;
+}
+
+.c3 {
+  font-size: 0.8em;
+  margin-left: 2.5em;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.c4 {
+  margin-bottom: 1.5em;
+}
+
+.c5 {
+  display: grid;
+  justify-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    grid-row-end: span 2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <section
+    className="c1"
+  >
+    <h1
+      className=""
+    >
+      Restaurants for 
+      <span
+        className="c2"
+      />
+    </h1>
+    <FormControl
+      disabled={false}
+    >
+      <FormLabel
+        id="restaurants"
+      >
+        My vote goes for...
+      </FormLabel>
+      <RadioGroup
+        aria-labelledby="demo-radio-buttons-group-label"
+        name="radio-buttons-group"
+        onChange={[Function]}
+        value=""
+      >
+        <div>
+          <FormControlLabel
+            control={<Radio />}
+            data-testid="123"
+            label="McDonalds"
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            value="123"
+          />
+          <div
+            className="c3"
+          />
+        </div>
+      </RadioGroup>
+      <div
+        className="c4"
+      />
+      <button
+        data-testid="submit-vote"
+        disabled={true}
+        onClick={[Function]}
+        variant="contained"
+      >
+        Select
+      </button>
+      <div
+        className="c4"
+      />
+      <button
+        data-testid="remove-vote"
+        disabled={true}
+        onClick={[Function]}
+        variant="contained"
+      >
+        Remove my vote
+      </button>
+    </FormControl>
+    <div
+      className="c4"
+    />
+  </section>
+  <div
+    className="c5"
+  >
+    <h2>
+      Results
+    </h2>
+    <div
+      className=""
+    >
+      No votes yet
+    </div>
+    <div
+      className="c4"
+    />
+    <h2>
+      Yesterdays votes
+    </h2>
+    <TableContainer
+      component="Paper"
+    >
+      <Table>
+        <TableHead>
+          <TableRow>
+            <TableCell>
+              Restaurant
+            </TableCell>
+            <TableCell>
+              Votes
+            </TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          <TableRow>
+            <TableCell>
+              McDonalds
+            </TableCell>
+            <TableCell>
+              1
+            </TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
+    </TableContainer>
+  </div>
+</div>
+`;
+
+exports[`renders correctly without restaurants 1`] = `
+.c2 {
+  cursor: pointer;
+  color: blue;
+}
+
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: darkblue;
+}
+
+.c1 {
+  text-transform: capitalize;
+}
+
+.c0 {
+  margin-top: 3em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 2em;
+  display: grid;
+  justify-items: center;
+}
+
+<div
+  className="c0"
+>
+  <h1
+    className=""
+  >
+    No Restaurants for 
+    <span
+      className="c1"
+    />
+  </h1>
+  <div
+    className=""
+  >
+    Is the city name correct? Switch to another city
+     
+    <a
+      className="c2"
+      href="/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      here
+    </a>
+  </div>
+</div>
+`;

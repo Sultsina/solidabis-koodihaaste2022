@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly without input 1`] = `
+.c0 {
+  margin-top: 3em;
+  display: grid;
+  justify-items: center;
+}
+
+.c1 {
+  margin-bottom: 2em;
+}
+
+.c1 > div {
+  place-self: center;
+}
+
+.c2 > div {
+  place-self: center;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <textField
+      data-testid="city"
+      label="What city are you in?"
+      onChange={[Function]}
+      variant="standard"
+    />
+  </div>
+  <div
+    className="c2"
+  >
+    <button
+      data-testid="select-city"
+      disabled={true}
+      onClick={[Function]}
+      variant="contained"
+    >
+      Select
+    </button>
+  </div>
+</div>
+`;

@@ -1,22 +1,12 @@
 # Solidabis koodihaaste 2022
 
-Tehtävänäsi on toteuttaa lounaspaikkaäänestyssovelluksen frontend valmista APIa vasten (työkalut saat valita itse).
-Arvosteluperusteet tärkeysjärjestyksessä:
+## Mitä teknologioita olet käyttänyt ja millä käyttöjärjestelmällä
 
- 1. Ratkaisun oikeellisuus
-    1. ravintoloiden haku paikkakuntakohtaisesti
-    2. äänen antaminen, muuttaminen ja poistaminen
-    3. äänestystulosten esittäminen reaaliajassa
- 2. Testit
- 3. Ratkaisun selkeys ja yksinkertaisuus
- 4. Käyttöliittymäratkaisut
+NodeJS, React, NextJS. Käyttöjärjestelmänä macOS
 
-Tässä repositoryssä on valmis Spring Bootilla toteutettu backend, joka toteuttaa lounaspaikkojen
-haku- ja äänestyslogiikan käyttäen Lounaat.info -palvelua.
+## Ohjeet miten ratkaisusi pystytetään ja käynnistetään
 
-Backendin ajamiseen tarvitset JDK:n (versio>=11) ja/tai Dockerin asennettuna työasemallesi.
-
-Backendin käynnistys:
+### Backendin käynnistys
 
     ./gradlew bootRun
 
@@ -24,21 +14,26 @@ tai Dockerilla:
 
     docker run -p 8080:8080 solidabis/koodihaaste22:latest
 
-Tutustu API-dokumentaatioon http://localhost:8080/swagger-ui.html
+### Frontendin käynnistys
 
-Päivä/selainkohtainen äänioikeus on toteutettu HTTP-only -cookiella.
+    cd frontend
+    npm install
+    npm run dev
 
-# Palautus
+Frontend löytyy tämän jälkeen osoitteesta `http://localhost:3000`
 
-_Forkkaa tästä repositorystä oma julkinen ratkaisureposi_ ja lähetä linkki 31.5.2022 mennessä sähköpostilla osoitteeseen
-koodihaaste@solidabis.com. Muokkaa README.md -tiedostoa siten, että siitä ilmenee vastauksen
-tarkastelua helpottavat tiedot, kuten käyttämäsi teknologiat ja muutaman lauseen kuvaus tekemistäsi
-ratkaisuista. Voit myös julkaista ratkaisusi esim. Herokuun, muista liittää linkki ja mahdolliset salasanat sähköpostiin!
+Testit voi ajaa
 
-Backendin muuttaminen esim. autentikoinnin toteuttamiseksi on sallittua.
+    npm run test:coverage
 
-Kerro samalla haluatko osallistua vain kilpailuun ja arvontaan, vai haluatko Solidabiksen
-ottavan yhteyttä myös työtarjouksiin liittyen. Se ei tarkoita, että sinulle lähetettäisiin roskapostia, vaan nimensä
-mukaisesti esimerkiksi kutsu työhaastatteluun. Voit halutessasi
-osallistua koodihasteeseen myös ilman, että haluat ottaa palkintoa
-vastaan tai osallistua arvontaan.
+## Muutaman lauseen kuvaus tekemästäsi ratkaisusta
+
+Kaupungin valinta on erotettu omaksi vaiheekseen itse lounasravintolan äänestämisestä. Tämä mahdollistaa kaupunkisivun kiinnittämisen kirjanmerkiksi sillä saman käyttäjän kaupunki tuskin vaihtuu kovin usein. Sama temppu onnistuisi muillakin keinoilla.
+
+Backendiä on muokattu niin että sieltä voi hakea oman äänensä jotta tieto on tarjolla jos selain esimerkiksi suljetaan. Tämän yhteydessä palautetaan myös VOTERID.
+
+Backendin muu data haetaan NextJS-serverin puolella jotta se saadaan käyttäjän ruudulle nopeammin.
+
+## Haluatko osallistua vain kilpailuun ja arvontaan
+
+Kyllä kiitos
